@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Manguer Aya">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="The official pet adoptin website for Love at First Paws">
+  <link rel="stylesheet" href="css/website_design.css">
+  <script src="js/form_validation.js" defer></script>
+  <title>Have A Pet To Give Away</title>
+<body>
+<%- include('partials/header') %>
+<div class="grid">
+    <div class="cont_giveapet">
+        <h1 class="giveapet_h1">Have a Pet to Give Away?</h1>
+        <% if (success_msg) { %>
+            <h3 class="alert alert-success"><%= success_msg %></h3>
+        <% } %>
+        <% if (error_msg) { %>
+            <h3 class="alert alert-danger"><%= error_msg %></h3>
+        <% } %>
+        <% if (info_msg) { %>
+            <h3 class="alert alert-info"><%= info_msg %></h3>
+        <% } %>
+        <form action="/haveapettogiveaway"  method="POST" class="give">
+            <div class="give_h3" ><h3>Pet's info</h3></div>
+            <div class="give1">
+                <div class="form">
+                    <label for="pet_typeg">Select Pet Type </label>
+                    <select id="pet_typeg" name="pet_typeg">
+                        <option value="cat">Cat</option>
+                        <option value="dog">Dog</option>
+                    </select>
+                </div>
+                <div class="form">
+                    <label for="cat_breed">Cat Breed     </label>
+                    <select id= "cat_breed" name="cat_breed">
+                        <option value="Abyssinian">Abyssinian</option>
+                        <option value="American Shorthair">American Shorthair</option>
+                        <option value="Bengal">Bengal</option>
+                        <option value="British Shorthair">British Shorthair</option>
+                        <option value="Maine Coon">Maine Coon</option>
+                        <option value="Persian">Persian</option>
+                        <option value="Ragdoll">Ragdoll</option>
+                        <option value="Siamese">Siamese</option>
+                        <option value="Sphynx">Sphynx</option>
+                        <option value="Tabby">Tabby</option>
+                        <option value="Russian Blue">Russian Blue</option>
+                    </select>
+                </div>
+                <div class="form">
+                    <label for="dog">Dog Breed</label>
+                    <select id= "dog" name="dog">
+                        <option value="Labrador Retriever">Labrador Retriever</option>
+                        <option value="German Shepherd">German Shepherd</option>
+                        <option value="Golden Retriever">Golden Retriever</option>
+                        <option value="French Bulldog">French Bulldog</option>
+                        <option value="Bulldog">Bulldog</option>
+                        <option value="Poodle">Poodle</option>
+                        <option value="Beagle">Beagle</option>
+                        <option value="Boxer">Boxer</option>
+                        <option value="Dachshund">Dachshund</option>
+                        <option value="Siberian Husky">Siberian Husky</option>
+                        <option value="Chihuahua">Chihuahua</option>
+                        <option value="Shih Tzu">Shih Tzu</option>
+                        <option value="Mixed Breed">Mixed Breed</option>
+                    </select>
+                </div>
+                <div class="form">
+                    <label for="age">Select Age</label>
+                    <select id=age  name=age >
+                        <option value="Puppy/Kitten">Puppy/Kitten</option>
+                        <option value="Young (1-3 years)">Young (1-3 years)</option>
+                        <option value="Adult (4-7 years)">Adult (4-7 years)</option>
+                        <option value="Senior (8+ years)">Senior (8+ years)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="g">
+                <p>
+                    Select Gender
+                    <label for="male"> Male</label>
+                    <input type ="radio" id="male" name="gender" value="male">
+                    <label for="female"> Female</label>
+                    <input type ="radio" id="female" name="gender" value="female">
+                </p>
+            </div>
+            <div class="g">
+                <p>
+                Gets along with others dogs?
+                <label for="yes1"> Yes</label>
+                <input type ="radio" id="yes1" name="friendly1" value="yes">
+                <label for="no1"> No</label>
+                <input type ="radio" id="no1" name="friendly1" value="no">
+                </p>
+            </div>
+            <div class="g">
+                <p>
+                Gets along with others cats?
+                <label for="yes2"> Yes</label>
+                <input type ="radio" id="yes2" name="friendly2" value="yes">
+                <label for="no2"> No</label>
+                <input type ="radio" id="no2" name="friendly2" value="no">
+                </p>
+            </div>
+            <div class="g">
+                <p>
+                Suitable for a family with small children?
+                <label for="yes3"> Yes</label>
+                <input type ="radio" id="yes3" name="friendly3" value="yes">
+                <label for="no3"> No</label>
+                <input type ="radio" id="no3" name="friendly3" value="no">
+                </p>
+            </div>
+            <div class="give_h3"><h3>Owner's Info</h3></div>
+           <div class="give2">
+                <div class="text">
+                    
+                    <label for="owner_name" class="label">Owner's name </label>
+                    <input type="text" placeholder="Enter full name" name="owner_name" id="owner_name">
+                    
+                </div>
+                <div class="text">
+                    
+                    <label for="owner_email" class="label">Owner's email</label>
+                    <input type="text" placeholder="Enter your email" name="owner_email" id="owner_email">
+                    
+                </div>
+           </div>
+           <div class="g_comment">
+                <p class="commentarea">Comment Area
+                <label for="textarea" class="label"></label>
+                <input type="text" placeholder="Enter your comment" name="textarea" id="textarea">
+                </p>
+            </div>
+            <div class="g">
+                <div class="g1">
+                    <button type="submit"> Submit </button>
+                    <button type="reset"> Clear </button>
+                </div>
+                
+            </div>
+        </form>
+        <div id="error-message" class="error-message"></div>
+    </div>
+    <main >
+        <div class="sidemenu">
+            <nav class="sidemenu__ul">
+                <h2><i class="fa fa-bars" ></i> Menu</h2>
+                <ul class="sidemenu_ul">
+                    <li>
+                        <a href='/homepage'><i class="fa fa-home" ></i><p>Home page</p></a>
+                    </li>
+                    <li>
+                      <a href="/createaccount"><i class='fas fa-user-plus' ></i><p>Create An account</p></a>
+                  </li>
+                    <li>
+                        <a href="/login"><i class="fa fa-sign-in" ></i><p>Log In</p></a>
+                    </li>
+                    <li>
+                        <a href='/findadogcat'><i class="fa fa-list-alt" ></i><p>Find a Dog/Cat</p></a>
+                    </li>
+                    <li>
+                        <a href='/petcare'><i class="fa fa-paw"></i><p>Dog/Cat Care</p></a>
+                    </li>
+                    <li>
+                        <a href='/haveapettogiveaway'><i class="fa fa-gift" ></i><p>Have a Pet to Give Away</p></a>
+                    </li>
+                    <li>
+                        <a href='/contactus'><i class="fa fa-mobile" ></i><p>Contact Us</p></a>
+                    </li>
+                    <li>
+                        <a href="/logout"><i class="fa fa-sign-out" ></i><p>Log Out</p></a>
+                    </li>
+                </ul>
+            </nav>
+        </div> 
+    </main>
+</div>
+<%- include('partials/footer') %>
+<script src="js/dateTime.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Manguer Aya">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="The official pet adoptin website for Love at First Paws">
+  <link rel="stylesheet" href="css/website_design.css">
+  <script src="js/form_validation.js" defer></script>
+  <title>Pet Care</title>
+<body>
+<%- include('partials/header') %>
+<div class="grid">
+    <div class="cont_dogcare">
+        <h1 class="dogcare_h1">Dog/Cat Care</h1>
+        <section>
+            <div class="dogcare_tips">
+                <div class="tips">
+                    <div class="tip">
+                        <h3><i class='fas fa-drumstick-bite' style='font-size:24px'></i> Nutrition</h3>
+                        <p>Ensure your pet gets a balanced diet. Choose high-quality food, and consult your vet for dietary recommendations specific to your pet’s age, breed, and health condition.</p>
+                    </div>
+                    <div class="tip">
+                        <h3><i class='fas fa-stethoscope' style='font-size:24px'></i> Health Care</h3>
+                        <p>Regular vet check-ups are important to monitor your pet’s health. Keep up with vaccinations, flea and tick prevention, and dental care. Watch for any signs of illness and consult your vet if you notice any changes in your pet’s behavior or health.</p>
+                     </div>
+                </div>
+                <div class="tips">
+                    <div class="tip" >
+                        <h3><i class='fas fa-cut' style='font-size:24px'></i> Grooming</h3>
+                        <p>Regular grooming is essential to keep your pet’s coat healthy. Brush your pet’s fur to remove tangles and prevent matting. Bathe your pet as needed, and keep their nails trimmed.</p>
+                     </div>
+                     <div  class="tip">
+                        <h3><i class='fas fa-hand-holding-heart' style='font-size:24px'></i> Love and Attention</h3>
+                        <p>Cats and dogs thrive on love and attention. Spend quality time with your pet, provide plenty of affection, and create a loving home environment.</p>
+                    </div>
+                </div>
+                <div class="tips">
+                    <div class="tip">
+                        <h3><i class='fas fa-dumbbell' style='font-size:24px'></i> Exercise</h3>
+                        <p>Daily exercise is crucial for your pet’s physical and mental health.
+                             Take your dog for walks, play fetch, and provide plenty of toys to keep them active and engaged.
+                             Provide interactive toys, engage in play sessions, and consider using climbing trees or scratching posts to keep your cat active</p>
+                     </div>
+                     <div class="tip">
+                        <h3><i class='fas fa-paw' style='font-size:24px'></i> Training</h3>
+                        <p>Training your pet helps establish good behavior and strengthens your bond. Use positive reinforcement techniques, be consistent, and start training from an early age.</p>
+                     </div>
+                </div>
+                <div class="tips">
+                    <div class="tip">
+                        <h3><i class='fas fa-handshake' style='font-size:24px'></i> Socialization</h3>
+                        <p>Socialize your pet by gradually introducing them to different people, environments, and other pets. This helps reduce stress and anxiety, making your cat or dog more adaptable and confident. Socialization is especially important during the puppy stage.</p>
+                     </div>
+                     <div class="tip">
+                        <h3><i class='fas fa-heartbeat' style='font-size:24px'></i> Safety</h3>
+                        <p>Ensure your pet’s safety by keeping them indoors or providing a secure outdoor enclosure. Microchip your cat and keep their ID tags up to date in case they get lost.Ensure your dog’s safety by keeping them on a leash during walks, using a secure harness or collar</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <main >
+        <div class="sidemenu">
+            <nav class="sidemenu__ul">
+                <h2><i class="fa fa-bars" ></i> Menu</h2>
+                <ul class="sidemenu_ul">
+                    <li>
+                        <a href='/homepage'><i class="fa fa-home" ></i><p>Home page</p></a>
+                    </li>
+                    <li>
+                      <a href="/createaccount"><i class='fas fa-user-plus' ></i><p>Create An account</p></a>
+                  </li>
+                    <li>
+                        <a href="/login"><i class="fa fa-sign-in" ></i><p>Log In</p></a>
+                    </li>
+                    <li>
+                        <a href='/findadogcat'><i class="fa fa-list-alt" ></i><p>Find a Dog/Cat</p></a>
+                    </li>
+                    <li>
+                        <a href='/petcare'><i class="fa fa-paw"></i><p>Dog/Cat Care</p></a>
+                    </li>
+                    <li>
+                        <a href='/haveapettogiveaway'><i class="fa fa-gift" ></i><p>Have a Pet to Give Away</p></a>
+                    </li>
+                    <li>
+                        <a href='/contactus'><i class="fa fa-mobile" ></i><p>Contact Us</p></a>
+                    </li>
+                    <li>
+                        <a href="/logout"><i class="fa fa-sign-out" ></i><p>Log Out</p></a>
+                    </li>
+                </ul>
+            </nav>
+        </div> 
+    </main>
+</div>
+<%- include('partials/footer') %>
+<script src="js/dateTime.js"></script>
+</body>
+</html>

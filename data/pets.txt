@@ -1,0 +1,10 @@
+ID:username:PetType:CatBreed:DogBreed:Age:Gender:FriendlyWithDogs:FriendlyWithCats:SuitableForChildren:Ownername:OwnerEmail:comment 
+NaN:user1:dog:Abyssinian:Labrador Retriever:Senior (8+ years):on:yes:no:yes:aya :aya@gmail.com:habndijjmdksm my comment 
+NaN:user1:cat:Ragdoll:Beagle:Young (1-3 years):male:no:no:no:amira:manguer@gmail.com:my comment is this one 
+NaN:user1:dog:Sphynx:Siberian Husky:Adult (4-7 years):female:no:yes:yes:marrwah:manguer3@gmail.com: jaime beaucoup les animaux 
+NaN:user1:cat:Russian Blue:Boxer:Adult (4-7 years):female:no:no:no:myname:myemail@hotmail.com:comment area 
+NaN:user1:cat:Siamese:Dachshund:Senior (8+ years):male:yes:yes:yes:mypet:mypet@gmail.com:comment section 
+NaN:user1:cat:Siamese:Dachshund:Senior (8+ years):male:no:no:no:mypet:mypet@gmail.com:comment section
+NaN:user1:cat:Russian Blue:Boxer:Adult (4-7 years):female:yes:yes:yes:myname:myemail@hotmail.com:comment area
+NaN:user1:cat:Abyssinian:Labrador Retriever:Senior (8+ years):male:yes:yes:yes:aya :aya@gmail.com:habndijjmdksm my comment 
+NaN:user1:cat:Ragdoll:Beagle:Young (1-3 years):femalemale:yes:yes:yes:amira:manguer@gmail.com:my comment is this one 

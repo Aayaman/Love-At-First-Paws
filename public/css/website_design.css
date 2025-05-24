@@ -1,0 +1,720 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+main{
+    display: contents;
+}
+
+.header__h1{
+    min-height: 300px;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 30, 28, 0.7),rgba(4, 30, 24, 0.7)),url(/images/pets-image.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    top:0;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.div_header{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+#dateTime{
+    color: #FFF;
+    font-size: 80%;
+}
+.header__h1 h1{
+    
+    color:rgba(206, 188, 175, 0.999);
+    font-weight: 800;
+    font-size: 36px;
+}
+.header__h1 p{
+    
+    margin: 3px;
+    border: solid white ;
+    font-size: 12px;
+    color: white;
+    padding: 5px;
+}
+.header__h1 img{
+    text-align: left;
+    background-color: #FFF;
+    border-radius: 50%;
+}
+/* || VARIABLES */
+
+
+h1,h2,h3{
+    font-family: "merriweather";
+    letter-spacing:0.1em;
+
+}
+h2,
+h3{
+    margin-bottom: 1em;
+    color: rgb(42, 43, 42);
+}
+h5{
+    text-align: center;
+    color: grey;
+    font-weight: 200;
+}
+p{
+    line-height: 1.5;
+}
+a:any-link{
+    color: #ffffff;
+    text-decoration: none;
+}
+a:hover,
+a:focus-visible {
+    color:rgb(121, 29, 29);
+}
+a:active {
+    color:rgb(4, 60, 244);
+}
+/*
+SIDE MENU
+}*/
+.sidemenu{
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    position: sticky;
+    top: 0;
+    align-self: start;
+}
+.sidemenu__ul{
+
+    
+    justify-content: space-evenly;
+    gap: 1rem;
+    max-width: 200px;
+    text-align: center;
+    padding : 10px;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.sidemenu_ul{
+    list-style-type: none;
+}
+.sidemenu__ul li{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+    border-radius: 30px;
+    margin-bottom:6px;
+    padding: 20px;
+    background-color: rgb(55, 81, 49);
+    color: rgb(249, 246, 246);
+}
+.sidemenu__ul li:hover
+{
+    background-color:rgba(78, 136, 99,0.7);
+    color:rgb(249, 245, 245);
+}
+/*
+CONTENT AREA
+}*/
+.contentarea{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.contentarea2{
+    text-wrap: wrap;
+    background-color: rgb(252, 252, 252);
+    border-radius: 20px;
+    margin: 9%;
+    padding: 5%;
+    text-align: center;
+}
+.div2_contentarea{
+    margin-top: 30px;
+    padding: 10px;
+}
+.div1_contentarea h2{
+    margin-bottom: 5px;
+}
+.div2_contentarea h2{
+    margin-bottom: 5px;
+}
+.buddy{
+    flex-basis: 32%;
+    margin-bottom: 30px;
+    position: relative;
+}
+.buddy img {
+    width: 100%;
+    display: block;
+}
+.petname{
+    flex-basis: 32%;
+    margin-bottom: 65px;
+    position: relative;
+}
+.petname img{
+    width: 100%;
+    height:400px;
+    display: block;
+}
+.layers{
+    background:transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5%;
+}
+.layers h3{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    bottom: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+.layers:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+    background-color: rgba(78, 136, 99,0.7);
+}
+.hp_header{
+    text-align: center;
+    margin: 0% 9%;
+    margin-top : 9%;
+}
+/*
+FOOTER
+}*/
+footer{
+    position:sticky;
+    position: -webkit-sticky;
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    padding :10px;
+    background-color:rgb(172, 153, 106);
+    color: rgba(84, 80, 64, 0.999);
+    text-align: center;
+}
+footer p{
+    font-size: smaller;
+    margin: 10px;
+}
+/*
+HOME PAGE 
+}*/
+.cont_homepage{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.aboutus_h1{
+    height: 85px;
+    padding-bottom: 10px;
+    padding: 20px;
+    background-color: rgb(57, 90, 69);
+    color: rgb(172, 153, 106);
+    border-bottom: 6px solid rgb(172, 153, 106);
+}
+.aboutus_h1 h1{
+    text-align: center;
+}
+.aboutus{
+   background-color: rgb(246, 246, 246);
+   padding : 30px;
+   margin: 9% 5%;
+   border-radius: 30px;
+}
+.whyadopt{
+    margin: 5%;
+}
+.whyadopt_h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 25%;
+    box-sizing: border-box;
+    text-align: center;
+    margin :3%;
+    border-radius: 5px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    background-color: rgb(255, 255, 255);
+}
+.course-col:hover{
+    background-color: rgb(247, 246, 244);
+    color: rgb(124, 7, 7);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+.howitworks{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+.howitworks img{
+    border-radius: 5px;
+    margin-top: 0px;
+    margin: 10px 30px;
+}
+.howitworks img:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+}
+.howitworks_div2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.howitworks_ol li{
+    margin-bottom: 20px;
+}
+/*
+BROWSE AVAILABLE PETS 
+}*/
+.cont_browse{
+    display:grid;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.browse_header h1{
+    height: 85px;
+    padding-bottom: 10px;
+    padding: 20px;
+    background-color:rgb(57, 90, 69) ;
+    color:rgb(172, 153, 106) ;
+    border-bottom: 6px solid rgb(172, 153, 106);
+    text-align: center;
+}
+.browse_div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+}
+.hp_rows{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+.petname{
+    margin: 3% 2%;
+}
+
+.hp_rows img{
+    border-radius: 5%;
+    width: 100%;
+    height: 30%;
+}
+/*
+DOG CAT CARE
+*/
+
+.dogcare_h1{
+    height: 85px;
+    padding-bottom: 10px;
+    padding: 20px;
+    background-color:rgb(57, 90, 69) ;
+    color:rgb(172, 153, 106) ;
+    border-bottom: 6px solid rgb(172, 153, 106);
+    text-align: center;
+}
+.cont_dogcare{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.dogcare_tips{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+.tips{
+    display: flex;
+}
+.tip{
+    margin :3%;
+    margin-bottom: 2%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    background-color:rgb(255, 255, 255);
+    border-radius: 30px;
+}
+/*
+CONTACT US
+}*/
+.cont_contactus{
+    display: grid;
+    grid-template-rows: 85px auto;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.contactus_h1{
+    height: 85px;
+    padding-bottom: 10px;
+    padding: 20px;
+    background-color:rgb(57, 90, 69) ;
+    color:rgb(172, 153, 106) ;
+    border-bottom: 6px solid rgb(172, 153, 106);
+    text-align: center;
+    font-size: 20px;
+}
+.contactus_p{
+    margin: 100px;
+    margin-top: 270px;
+    text-align: center;
+}
+/*
+HAVE A PET TO GIVE AWAY
+FIND A DOG / CAT 
+}*/
+.grid{
+    display: grid;
+    background-color: #e8e8e8;
+    grid-template-columns: auto auto auto 237.5px 175px;
+}
+.cont_giveapet{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    display: grid;
+    grid-template-rows: 115px  auto;
+    
+}
+.giveapet_h1{
+    height: 85px;
+    padding-bottom: 10px;
+    padding: 20px;
+    background-color:rgb(57, 90, 69) ;
+    color:rgb(172, 153, 106) ;
+    border-bottom: 6px solid rgb(172, 153, 106);
+    text-align: center;
+    font-size: 20px;
+}
+.give_h3{
+    text-align: center;
+    padding: 20px;
+}
+.give{
+    display: flex;
+    flex-direction: column;
+    margin: 2% 5%;
+    padding: 40px;
+    background-color: #FFF;
+    border-radius: 20px;
+}
+.create{
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
+    padding: 40px;
+    background-color: #FFF;
+    border-radius: 20px;
+}
+.give1{
+    display: flex;
+    flex-wrap: wrap;
+}
+.give1 .form {
+    flex: 1 1 45%;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.give1 .form select{
+    height: 45px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    align-content: center;
+    align-items: center;
+}
+.give2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.give2 .text input{
+    height: 45px;
+    width: 100%;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    align-content: center;
+    align-items: center;
+}
+.give2 .text{
+    flex: 1 1 45%;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.g{
+    margin: 1.5% 5%;
+}
+.g1{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.g1 button{
+    height: 35px;
+    width: 100%;
+    color: #FFF;
+    border-radius: 5px;
+    margin: 0px 3%;
+    background-color:rgb(57, 90, 69) ;
+}
+.g_comment .commentarea input{
+    font-size: 14px;
+    height: 100px;
+    width: 100%;
+    text-align: center ;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.g_comment .commentarea{
+    padding: 10px;
+}
+/*
+Alert Messages
+}*/
+.alert_no{
+    align-content: center;
+    text-align: center;
+    margin:2% 10%;
+}
+.alert{
+    height: max-content;
+    margin:2% 10%;
+    background-color: #FFF;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    list-style-type: none;
+}
+.alert_li{
+    padding: 2%;
+    margin:2% 20%;
+    background-color: #FFF;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    list-style-type: none;
+}
+@media(max-width:700px){
+    .grid{
+        grid-template-columns: auto auto auto 237.5px 70px;
+    }
+    .give1 .form select{
+        height: 30px;
+        font-size: 12px;
+    }
+    .give2 .text input{
+        font-size: 12px;
+        height: 30px;
+    }
+    .g{
+        font-size: 12px;
+    }
+    .header__h1 img{
+         width: 100px;
+         height: 100px;
+    }
+    .header__h1{
+        min-height: 250px;
+    }
+    .header__h1 h1{
+        font-size: 20px;
+    }
+    .hp_rows{
+        flex-direction: column;
+    }
+    .petname{
+        margin: 3% 5%;
+       }
+    .contentarea2{
+        padding: 20px;
+        font-size: smaller;
+    }
+    .aboutus{
+        padding: 20px;
+        font-size: smaller;
+    }
+    .row{
+        flex-direction: column;
+        padding: 20px;
+        font-size: smaller;
+    }
+    .tips{
+        flex-direction: column;
+    }
+    .browse_header h1{
+        font-size: 22px;
+    }
+    .giveapet_h1{
+        font-size: 22px;
+    }
+    .contactus_h1{
+        font-size: 22px;
+    }
+    .contactus_p{
+        margin: 50px;
+        margin-top: 200px;
+        font-size: 12px;
+    }
+    .dogcare_h1{
+        font-size: 22px;
+    }
+    .findadogcat_h1{
+        font-size: 22px;
+    }
+    .aboutus_h1{
+        font-size: 12px;
+    }
+    .howitworks img{
+        margin: 0px 20px;
+        height: auto;
+        width: 100%;
+        margin-left: 30px;
+    }
+    .aboutus{
+        margin: 30px;
+    }
+    .sidemenu__ul{
+        max-width: 150px;
+    }
+    .sidemenu__ul li a p{
+        display: none;
+    }
+    .give{
+        margin: 0 2%;
+        padding: 10px;
+    }
+
+    .create{
+        margin: 0 2%;
+        padding: 10px;
+    }
+    .hp_header{
+        margin: 9%;
+    }
+}
+@media(max-width:1000px){
+    
+    .grid{
+        grid-template-columns: auto auto auto 237.5px 80px;
+    }
+    .header__h1 h1{
+        font-size: 20px;
+    }
+    .hp_rows{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .hp_rows img{
+        width: 100%;
+        height: 30%;
+    }
+    .petname{
+     margin: 3% 15%;
+    }
+    .contentarea2{
+        padding: 20px;
+        font-size: smaller;
+    }
+    .aboutus{
+        padding: 20px;
+        font-size: smaller;
+    }
+    .row{
+        flex-direction: column;
+        padding: 20px;
+        font-size: smaller;
+    }
+    .tips{
+        flex-direction: column;
+    }
+    .browse_header h1{
+        font-size: 22px;
+    }
+    .giveapet_h1{
+        font-size: 22px;
+    }
+    .contactus_h1{
+        font-size: 22px;
+    }
+    .dogcare_h1{
+        font-size: 22px;
+    }
+    .findadogcat_h1{
+        font-size: 22px;
+    }
+    .aboutus_h1{
+        font-size: 12px;
+    }
+    .howitworks img{
+        margin: 0px 20px;
+        height: auto;
+        width: 75%;
+        margin-left: 12.5%;
+        margin-right: 12.5%;
+    }
+    .aboutus{
+        margin: 30px;
+    }
+    .sidemenu__ul{
+        max-width: 150px;
+    }
+    .sidemenu__ul li a p{
+        display: none;
+    }
+    .give{
+        margin: 5%;
+        padding: 10px;
+    }
+    .create{
+        margin: 0 2%;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Manguer Aya">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="The official pet adoptin website for Love at First Paws">
+  <link rel="stylesheet" href="css/website_design.css">
+  <title>Find A Dog/Cat</title>
+<body>
+<%- include('partials/header') %>
+<div class="grid">
+    <div class="cont_giveapet">
+        <h1 class="giveapet_h1">Log Out</h1>
+        <form action="/logout" method="POST" class="create">
+          <div class="give_h3"><h3>Are you sure you want to log out?</h3></div>
+          <div class="g">
+            <div class="g1">
+              <button type="submit">Log Out</button>
+            </div>
+          </div>
+        </form>
+        <% if (message) { %>
+            <h3 class="alert"><%= message %></h3>
+        <% } %>
+    </div>
+    <main >
+        <div class="sidemenu">
+            <nav class="sidemenu__ul">
+                <h2><i class="fa fa-bars" ></i> Menu</h2>
+                <ul class="sidemenu_ul">
+                    <li>
+                        <a href='/homepage'><i class="fa fa-home" ></i><p>Home page</p></a>
+                    </li>
+                    <li>
+                      <a href="/createaccount"><i class='fas fa-user-plus' ></i><p>Create An account</p></a>
+                  </li>
+                    <li>
+                        <a href="/login"><i class="fa fa-sign-in" ></i><p>Log In</p></a>
+                    </li>
+                    <li>
+                        <a href='/findadogcat'><i class="fa fa-list-alt" ></i><p>Find a Dog/Cat</p></a>
+                    </li>
+                    <li>
+                        <a href='/petcare'><i class="fa fa-paw"></i><p>Dog/Cat Care</p></a>
+                    </li>
+                    <li>
+                        <a href='/haveapettogiveaway'><i class="fa fa-gift" ></i><p>Have a Pet to Give Away</p></a>
+                    </li>
+                    <li>
+                        <a href='/contactus'><i class="fa fa-mobile" ></i><p>Contact Us</p></a>
+                    </li>
+                    <li>
+                        <a href="/logout"><i class="fa fa-sign-out" ></i><p>Log Out</p></a>
+                    </li>
+                </ul>
+            </nav>
+        </div> 
+    </main>
+</div>
+<%- include('partials/footer') %>
+<script src="js/dateTime.js"></script>
+</body>
+</html>
