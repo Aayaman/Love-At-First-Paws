@@ -6,14 +6,19 @@
   <meta name="author" content="Manguer Aya">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="styles.css">
   <meta name="description" content="The official pet adoptin website for Love at First Paws">
   <link rel="stylesheet" href="css/website_design.css">
-  <script src="js/form_validation.js" defer></script>
+  <script src="../public/js/form_validation.js" defer></script>
   <title>Love At First Paws</title>
 <body>
-<%- include('partials/header') %>
+    <header class="header__h1">
+        <a href='/'><img src="../public/images/dogandcat-2-removebg-preview.png" alt="logo designed by me" height="150" width="150"></a>
+        <div class="div_header">
+            <h1 >Love at First Paws</h1>
+            <p>Visit Us To Know More</p>
+            <div id="dateTime"></div>
+        </div>
+    </header>
 <div class="grid">
     <div class="contentarea">
         <div class="contentarea2">
@@ -71,35 +76,45 @@
                 <h2><i class="fa fa-bars" ></i> Menu</h2>
                 <ul class="sidemenu_ul">
                     <li>
-                        <a href='/homepage'><i class="fa fa-home" ></i><p>Home page</p></a>
+                        <a href='../views/homepage.html'><i class="fa fa-home" ></i><p>Home page</p></a>
                     </li>
                     <li>
-                      <a href="/createaccount"><i class='fas fa-user-plus' ></i><p>Create An account</p></a>
+                      <a href="../views/createaccount.html"><i class='fas fa-user-plus' ></i><p>Create An account</p></a>
                   </li>
                     <li>
-                        <a href="/login"><i class="fa fa-sign-in" ></i><p>Log In</p></a>
+                        <a href="../views/login.html"><i class="fa fa-sign-in" ></i><p>Log In</p></a>
                     </li>
                     <li>
-                        <a href='/findadogcat'><i class="fa fa-list-alt" ></i><p>Find a Dog/Cat</p></a>
+                        <a href='../views/findadogcat.html'><i class="fa fa-list-alt" ></i><p>Find a Dog/Cat</p></a>
                     </li>
                     <li>
-                        <a href='/petcare'><i class="fa fa-paw"></i><p>Dog/Cat Care</p></a>
+                        <a href='../views/petcare.html'><i class="fa fa-paw"></i><p>Dog/Cat Care</p></a>
                     </li>
                     <li>
-                        <a href='/haveapettogiveaway'><i class="fa fa-gift" ></i><p>Have a Pet to Give Away</p></a>
+                        <a href='../views/haveapettogiveaway.html'><i class="fa fa-gift" ></i><p>Have a Pet to Give Away</p></a>
                     </li>
                     <li>
-                        <a href='/contactus'><i class="fa fa-mobile" ></i><p>Contact Us</p></a>
+                        <a href='../views/contactus.html'><i class="fa fa-mobile" ></i><p>Contact Us</p></a>
                     </li>
                     <li>
-                        <a href="/logout"><i class="fa fa-sign-out" ></i><p>Log Out</p></a>
+                        <a href="../views/logout.html"><i class="fa fa-sign-out" ></i><p>Log Out</p></a>
                     </li>
                 </ul>
             </nav>
         </div> 
     </main>  
 </div>
-<%- include('partials/footer') %>
-<script src="js/dateTime.js"></script>
+<footer class="footer">
+    <h3 class="footer__h3">Privacy/Disclaimer</h3>
+    <p class="footer_p1">At Love at first Paws, we respect your privacy and are committed to protecting any personal information you share with us.
+         We will not sell or misuse your information in any way.
+    </p>
+    <p class="footer_p2">
+        Please note that while we strive to provide accurate information about pets available for adoption,
+         Love at first Paws cannot guarantee the accuracy of all information provided by pet owners.
+         We encourage you to verify details directly with the shelter or rescue organization before making adoption decisions.
+    </p>
+</footer>
+<script src="../public/js/dateTime.js"></script>
 </body>
 </html>
