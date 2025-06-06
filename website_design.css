@@ -11,7 +11,7 @@ main{
 .header__h1{
     min-height: 300px;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 30, 28, 0.7),rgba(4, 30, 24, 0.7)),url(../images/pets-image.jpg);
+    background-image: linear-gradient(rgba(4, 30, 28, 0.7),rgba(4, 30, 24, 0.7)),url(pets-image.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
